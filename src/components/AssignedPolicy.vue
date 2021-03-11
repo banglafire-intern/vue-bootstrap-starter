@@ -1,8 +1,5 @@
 <template>
-  <!-- <div class="d-flex justify-content-between">
-     <p> Hello </p>
-     <p>World</p>
-    </div> -->
+ 
   <div class="container p-3">
     <div class="row justify-content-lg-center">
       <div class="col col-xs-1">Username</div>
