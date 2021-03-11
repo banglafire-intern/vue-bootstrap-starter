@@ -8,8 +8,8 @@
       <div class="col col-xs-1">Username</div>
       <div class="col-xxl-auto">
         <div v-if="toggle">
-          <div class="dropdown">
-            <button
+          <select name="LeaveType" @change="onChange($event)" class="form-control form-control-md" v-model="key">
+            <!-- <button
               class="btn btn-secondary dropdown-toggle"
               type="button"
               id="dropdownMenuButton"
@@ -18,14 +18,19 @@
               aria-expanded="false"
             >
               Policies
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">1st year</a>
-              <a class="dropdown-item" href="#">2nd year</a>
-              <a class="dropdown-item" href="#">Junior Developer</a>
-              <a class="dropdown-item" href="#">Senior Developer</a>
-            </div>
-          </div>
+            </button> -->
+            <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> -->
+              <option value="">Select Policies</option>
+              <option class="dropdown-item" value="1st Year">1st year</option>
+              <option class="dropdown-item" value="2">2nd year</option>
+              <!-- <option class="dropdown-item">Junior Developer</option>
+              <option class="dropdown-item">Senior Developer</option> -->
+            <!-- </div> -->
+          <!-- </select>
+            <option value="1">Annual Leave/ Off-Day</option>
+            <option value="2">On Demand Leave</option>
+             -->
+          </select>
         </div>
         <div v-else>
           <p>Policy</p>
@@ -74,6 +79,10 @@ export default {
 methods: {
     toggleAdd() {
       this.showAdd = !this.showAdd;
+    },
+
+    onChange(event) {
+        console.log(event.target.value)
     },
 
     handleSubmit: function () {
