@@ -8,23 +8,32 @@
     <h2>Assigned Policy</h2>
   </div>
     <AssignedPolicy />
+  <div class="d-flex justify-content-center mt-5">
+    <h2>Leave Request</h2>
   </div>
- 
+    <LeaveRequest />
+    <Requests />
+    
+ </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import navbar from './components/navbar.vue'
-import AssignedPolicy from './components/AssignedPolicy.vue'
+import navbar from "./components/navbar.vue";
+import AssignedPolicy from "./components/AssignedPolicy.vue";
+import LeaveRequest from "./components/LeaveRequest";
+import Requests from "./components/Requests.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     // HelloWorld,
     navbar,
     AssignedPolicy,
-  }
-}
+    LeaveRequest,
+    Requests,
+  },
+};
 </script>
 
 <style>
