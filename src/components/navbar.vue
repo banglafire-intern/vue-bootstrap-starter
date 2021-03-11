@@ -26,6 +26,9 @@
           Chat
         </button>
       </div>
+      <div class="float-right">
+<img src="/img/images.png" alt="" class="avatar">
+        </div>
 
       <!-- <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -43,4 +46,10 @@ export default {
 </script>
 
 <style scoped>
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
 </style>
